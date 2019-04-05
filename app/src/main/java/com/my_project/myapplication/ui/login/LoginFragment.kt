@@ -58,7 +58,6 @@ class LoginFragment : Fragment(), MviView<LoginIntent, LoginState> {
 
         state.error?.let {
             showAuthorizationError(it.message!!)
-            (activity as MainActivity).showSearch()
         }
     }
 
